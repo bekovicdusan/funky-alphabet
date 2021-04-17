@@ -1,10 +1,6 @@
 import React from 'react';
 import { Box, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-// import { red, green, purple } from '@material-ui/colors';
-
-
-import myClasses from './Component.module.scss';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -14,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const Navbar = () => {
+const Navbar = ({ hit, miss, left }) => {
     const classes = useStyles();
     return (
         <Grid container direction="column">
@@ -24,18 +20,18 @@ const Navbar = () => {
                 </Box>
             </Grid>
             <Grid item>
-                <Box component="span" className={classes.root}>
-                    Hit: 
+                <Box component="span" className={classes.root} color="secondary.success">
+                    Hit: {hit}
                 </Box>
             </Grid>
             <Grid item>
-                <Box component="span" className={classes.root}>
-                    Miss:
+                <Box component="span" className={classes.root} color="secondary.warning">
+                    Miss: {miss}
                 </Box>
             </Grid>
             <Grid item>
-                <Box component="span" className={classes.root}>
-                    Left: 
+                <Box component="span" className={classes.root} color="secondary.purple">
+                    Left: {left}
                 </Box>
             </Grid>
         </Grid>

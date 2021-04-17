@@ -14,6 +14,9 @@ const theme = createMuiTheme({
       light: "#ddb7e7d9"
     },
     secondary: {
+      purple: "#9c27b0",
+      warning: "#f44336",
+      success: "#4caf50",
       main: "#A51D4F"
     },
     accent: {
