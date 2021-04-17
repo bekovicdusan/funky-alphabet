@@ -1,0 +1,21 @@
+.gameButton:active {
+    border: 1px solid green;
+
+}
+
+.letterContainer {
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.inputField {
+    text-transform: uppercase;
+}
